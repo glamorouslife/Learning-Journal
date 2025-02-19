@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body, html{
+    overflow-x:none; /*prevent form horizontal scrolling*/
+    font-family: "Liter", serif;
+}
+
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.navbar {
+    
+    height: 3.69rem;
+    background-color: #FFFFFF;
+    color:#090909;
+    padding-top: 1.06em;
+    padding-left: 1.25em;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    justify-content: space-between;
+    gap:20px;
+    
+
+}
+
+.logo-one{
+    width:1.45rem;
+    height:1.45rem;
+    
+}
+
+.logo-two{
+    width:7.10rem;
+    height:0.938rem;
+    
+}
+
+.logo-one, .logo-two{
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 0.94;
+}
+
+.nav-links{
+    list-style:none;
+    padding-top: 0px;
+    margin-top: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+    
+    
+}
+
+.nav-links{
+    width:50vw;
+}
+
+
+.home, .about{
+    font-size: 0.75rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:#090909;
+}
+
+.main{
+    background-image: url("images/background.png");
+    background-size: cover;
+    max-width:100%;
+    height:auto;
+    color:#FFFFFF;
+    padding-bottom:2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.main .date{
+    font-size: 0.75rem;
+    line-height: 0.9;
+    display: inline-block;
+    padding-top: 9.4em;
+    padding-left:2.5em;
+}
+
+.main .title-main {
+    font-size: 1.5rem;
+    padding-left:1.30em;
+    font-weight: 700;
+    
+}
+
+.main .subheading{
+    font-size: 1rem;
+    margin-top: 1em;
+    margin-left:0;
+    margin-right:0;
+    padding-left:1.90em;
+    padding-right:1.90em
+
+}
+
+.post {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap:20px;
+    justify-content: center;
+    margin:0 auto;
+    padding:20px;
+    max-width:100%; /*making sure that it does not exceed viewport width*/
+
+}
+
+.post img{
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    height:15em;
+    display:block;
+    margin: 0  auto 1em auto;
+}
+
+article{
+    display: block;
+    max-width:100%;
+    height:auto;
+    padding: 2em 0.5em 0 0.5em;
+    
+
+}
+
+header p, h1{
+    margin-top:0.6em;
+}
+
+header{
+    display: block;
+    height:auto;
+    max-width:100%;
+}
+
+.more{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:4em;
+    
+    
+    
+}
+
+.more a{
+    color:black;
+    text-decoration-color:black ;
+    cursor: pointer;
+    
+}
+
+
+
+
+    
+
+
+@media (min-width:1090px){
+    .logo-one{
+        width:2.125rem;
+        height:2.125rem;
+    }
+    .logo-two{
+        width:10.5rem;
+        height:1.375rem;
+    }
+    .nav-links{
+        width:40vw;
+        gap:70px;
+        justify-content: center;
+    }
+    .about{
+        margin-right:-10rem
+    }
+    .main{
+        background-size:cover;
+        background-position: center;
+        min-height: 80vh;
+        width:100vw;
+        
+    }
+
+    #date {
+        font-size: 1.2em;
+        padding-left:3rem;
+        
+    }
+
+    #title-main{
+        font-size: 3em;
+        padding-left:3rem
+        
+    }
+  
+    #subheading{
+        font-size: 1.5em;
+        padding-left:3rem;
+        padding-right: 13rem;
+        
+    }
+   
+
+}
+
